@@ -3,7 +3,7 @@ import java.io.File;
 /**
  * Créer le : lundi 21 juillet 2025
  * Auteur : Yoann Meclot (DevMyBits)
- * E-mail : yoannmeclot@hotmail.com
+ * E-mail : devmybits@gmail.com
  */
 public final class MimeTypes
 {
