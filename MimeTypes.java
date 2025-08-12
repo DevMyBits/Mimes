@@ -38,7 +38,7 @@ public final class MimeTypes
     private static boolean check(String name, String category)
     {
         int index = name.indexOf("/");
-        if (index < 0) return false;
+        if (index <= 0) return false;
 
         return name.substring(0, index).contains(category);
     }
