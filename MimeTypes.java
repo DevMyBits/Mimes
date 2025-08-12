@@ -28,7 +28,7 @@ public final class MimeTypes
 
     public static int getType(String mime)
     {
-        if(check(mime, "text")) return TEXT;
+        if (check(mime, "text")) return TEXT;
         else if (check(mime, "image")) return IMAGE;
         else if (check(mime, "video")) return VIDEO;
         else if (check(mime, "audio")) return MUSIC;
@@ -37,6 +37,9 @@ public final class MimeTypes
 
     private static boolean check(String name, String category)
     {
-        return name.contains("/") && category.contains(name.substring(0, name.indexOf("/")));
+        int index = name.indexOf("/");
+        if (index < 0) return false;
+
+        return name.substring(0, index).contains(category);
     }
 }
